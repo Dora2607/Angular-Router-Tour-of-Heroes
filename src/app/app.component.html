@@ -1,15 +1,21 @@
 <h1>Angular Router</h1>
 <nav class="navbar">
   <button mat-raised-button color="primary" 
-    routerLink="crisis-center">
+    routerLink="/crisis-center" 
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page">
     Crisis Center
   </button>
-  <button mat-raised-button color="primary" 
-    routerLink="heroes">
+  <button mat-raised-button color="primary " 
+    routerLink="/heroes"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page">
     Heroes
   </button>
   <button mat-raised-button color="primary">Admin</button>
   <button mat-raised-button color="primary">Login</button>
   <button mat-raised-button color="primary">Contact</button>
 </nav>
-<router-outlet></router-outlet>
+<div [@routeAnimations]="getAnimationData()">
+  <router-outlet></router-outlet>
+</div>
