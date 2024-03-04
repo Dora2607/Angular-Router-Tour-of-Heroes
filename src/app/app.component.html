@@ -14,8 +14,13 @@
   </button>
   <button mat-raised-button color="primary">Admin</button>
   <button mat-raised-button color="primary">Login</button>
-  <button mat-raised-button color="primary">Contact</button>
+  <button mat-raised-button color="primary"
+    [routerLink]="[{outlets: {popup: ['compose']}}]"
+    >
+    Contact
+  </button>
 </nav>
 <div [@routeAnimations]="getAnimationData()">
   <router-outlet></router-outlet>
 </div>
+<router-outlet name="popup"></router-outlet>

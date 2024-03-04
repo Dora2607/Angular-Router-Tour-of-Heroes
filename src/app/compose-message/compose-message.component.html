@@ -1,0 +1,26 @@
+<h3>Contact Crisis Center</h3>
+<mat-form-field>
+    <mat-label>Enter your message: </mat-label>
+    <textarea 
+        id="message" 
+        [(ngModel)]="message" 
+        matInput
+        [disabled]="sending"
+        ></textarea>
+</mat-form-field>
+<p>
+    <button 
+        type="button" 
+        mat-raised-button 
+        color="primary"
+        (click)="send()">
+        Send
+    </button>
+    <button 
+        type="button" 
+        mat-raised-button 
+        color="primary"
+        (click)="cancel()">
+        Cancel
+    </button>
+</p>

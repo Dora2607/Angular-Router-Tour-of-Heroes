@@ -15,19 +15,19 @@ import { HeroesModule } from './heroes/heroes.module';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
-
-import { CrisisListComponent } from './crisis-center/crisis-list/crisis-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { CrisisCenterComponent } from './crisis-center/crisis-center/crisis-center.component';
+
+import { CrisisCenterModule } from './crisis-center/crisis-center.module';
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CrisisListComponent,
     PageNotFoundComponent,
-    CrisisCenterComponent,
+    ComposeMessageComponent,
+
   ],
   imports: [    
     MatButtonModule,
@@ -38,6 +38,7 @@ import { CrisisCenterComponent } from './crisis-center/crisis-center/crisis-cent
     FormsModule,
     HeroesModule,
     AppRoutingModule,
+    CrisisCenterModule,
  
   ],
   providers: [

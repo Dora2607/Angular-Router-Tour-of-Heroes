@@ -1,5 +1,5 @@
 <h2>Heroes</h2>
-<div *ngIf="hero$ | async as hero">
+<div class="detail" *ngIf="hero$ | async as hero">
     <h3>{{hero.name}}</h3>
     <p>Id: {{hero.id}}</p>
     <label for="hero-name">Hero name: </label>

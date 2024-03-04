@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CrisisListComponent } from './crisis-center/crisis-list/crisis-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 const routes: Routes = [
-  {path: 'crisis-center', component:CrisisListComponent},
   {path:'', pathMatch:'full', redirectTo:'/heroes'},
-  // Wildcard route for any unmatch
-  {path:'**', component:PageNotFoundComponent}
+  {path: 'compose', component: ComposeMessageComponent, outlet:'popup'},
+  {path:'**', component:   PageNotFoundComponent}
 ];
 
 @NgModule({
