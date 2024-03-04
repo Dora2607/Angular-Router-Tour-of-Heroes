@@ -1,0 +1,8 @@
+.navbar button{
+    margin:10px;
+}
+
+.navbar button:active {
+    background-color: black;
+    color: white;
+}
