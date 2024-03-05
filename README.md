@@ -53,5 +53,8 @@ Il routing ha giocato un ruolo fondamentale nello sviluppo di questa applicazion
 - **Caricamento pigro di un NgModule**: Questo migliora le prestazioni dell'applicazione caricando le funzionalità solo quando necessario.
 - **Guardia canMatch**: Questa verifica prima di caricare gli asset del modulo di funzionalità.
 
+## Link 
+Per provare l'applicazione [Angular Router Tour of Heroes](https://angularrouter-tourofheroes.web.app)
+
 ## Ringraziamenti
 Grazie per aver visitato il mio progetto!
