@@ -10,15 +10,19 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 
 import { AppRoutingModule } from './app-routing.module';
+import { CrisisCenterRoutingModule } from './crisis-center/crisis-center-routing.module';
+import { AdminRoutingModule } from './admin/admin-routing.module'; 
+
 import { AppComponent } from './app.component';
 import { HeroesModule } from './heroes/heroes.module';
+import { AdminModule } from './admin/admin.module';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
 import { CrisisCenterModule } from './crisis-center/crisis-center.module';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
+import { AuthModule } from './auth/auth.module';
 
 
 
@@ -27,6 +31,7 @@ import { ComposeMessageComponent } from './compose-message/compose-message.compo
     AppComponent,
     PageNotFoundComponent,
     ComposeMessageComponent,
+    
 
   ],
   imports: [    
@@ -37,8 +42,13 @@ import { ComposeMessageComponent } from './compose-message/compose-message.compo
     BrowserAnimationsModule,
     FormsModule,
     HeroesModule,
-    AppRoutingModule,
     CrisisCenterModule,
+    AdminModule,
+    AuthModule,
+    AppRoutingModule,
+    CrisisCenterRoutingModule,
+    AdminRoutingModule,
+    
  
   ],
   providers: [

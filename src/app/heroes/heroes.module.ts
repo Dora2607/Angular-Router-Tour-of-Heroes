@@ -7,10 +7,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 
+import { HeroesRoutingModule } from './heroes-routing.module';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
-import { HeroesRoutingModule } from './heroes-routing.module';
+
 
 @NgModule({
   imports: [

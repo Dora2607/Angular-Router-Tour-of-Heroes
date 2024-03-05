@@ -1,26 +1,52 @@
-<h1>Angular Router</h1>
-<nav class="navbar">
-  <button mat-raised-button color="primary" 
-    routerLink="/crisis-center" 
-    routerLinkActive="active"
-    ariaCurrentWhenActive="page">
-    Crisis Center
-  </button>
-  <button mat-raised-button color="primary " 
-    routerLink="/heroes"
-    routerLinkActive="active"
-    ariaCurrentWhenActive="page">
-    Heroes
-  </button>
-  <button mat-raised-button color="primary">Admin</button>
-  <button mat-raised-button color="primary">Login</button>
-  <button mat-raised-button color="primary"
-    [routerLink]="[{outlets: {popup: ['compose']}}]"
+<div class="wrapper">
+  <h1 class="title">Angular Router</h1>
+  <nav class="navbar">
+    <button
+      mat-raised-button
+      color="primary"
+      routerLink="/crisis-center"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
     >
-    Contact
-  </button>
-</nav>
-<div [@routeAnimations]="getAnimationData()">
-  <router-outlet></router-outlet>
+      Crisis Center
+    </button>
+    <button
+      mat-raised-button
+      color="primary "
+      routerLink="/heroes"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      Heroes
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      routerLink="/admin"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      Admin
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      routerLink="/login"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      Login
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      [routerLink]="[{ outlets: { popup: ['compose'] } }]"
+    >
+      Contact
+    </button>
+  </nav>
+  <div [@routeAnimations]="getAnimationData()">
+    <router-outlet></router-outlet>
+  </div>
+  <router-outlet name="popup"></router-outlet>
 </div>
-<router-outlet name="popup"></router-outlet>

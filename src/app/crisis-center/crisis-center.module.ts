@@ -26,9 +26,10 @@ import { CrisisDetailComponent } from './crisis-detail/crisis-detail.component';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    CrisisCenterRoutingModule,
     CommonModule,
     FormsModule,
-    CrisisCenterRoutingModule,
+    
   ]
 })
 export class CrisisCenterModule { }
