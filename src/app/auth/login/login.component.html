@@ -1,6 +1,17 @@
-<h2>Login</h2>
-<p>{{message}}</p>
-<p>
-  <button type="button" (click)="login()"  *ngIf="!authService.isLoggedIn">Login</button>
-  <button type="button" (click)="logout()" *ngIf="authService.isLoggedIn">Logout</button>
-</p>
+<div class="login">
+    <h2>Login</h2>
+    <p>{{message}}</p>
+    <p>
+    <button
+        mat-stroked-button
+        color="primary"
+        type="button" (click)="login()"  
+        *ngIf="!authService.isLoggedIn">Login</button>
+    <button 
+        type="button"
+        mat-stroked-button 
+        color="primary"
+        (click)="logout()" 
+        *ngIf="authService.isLoggedIn">Logout</button>
+    </p>
+</div>

@@ -13,7 +13,7 @@
     <button
       mat-raised-button
       color="primary "
-      routerLink="/heroes"
+      routerLink="/superheroes"
       routerLinkActive="active"
       ariaCurrentWhenActive="page"
     >
@@ -45,7 +45,7 @@
       Contact
     </button>
   </nav>
-  <div [@routeAnimations]="getAnimationData()">
+  <div [@routeAnimation]="getAnimationData()">
     <router-outlet></router-outlet>
   </div>
   <router-outlet name="popup"></router-outlet>

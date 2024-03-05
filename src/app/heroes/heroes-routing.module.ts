@@ -11,7 +11,7 @@ const heroesRoutes: Routes = [
   }},
   {path: 'superhero/:id', component: HeroDetailComponent, data: {
     animation:'hero'
-  }} // <-- hero detail
+  }} 
 ];
 
 @NgModule({
